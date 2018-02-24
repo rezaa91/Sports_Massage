@@ -1,0 +1,12 @@
+#carousel-wrapper{
+	margin-top:0px;
+}
+
+.carousel-caption h1{
+	margin-top:-50vh;
+	font-size:6rem;
+}
+
+ul{
+	text-align:center;
+}

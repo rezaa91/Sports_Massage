@@ -1,0 +1,69 @@
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width initial-scale=1">
+		<!--jquery file-->
+		<script src="<?php echo $jquery; ?>"></script>
+
+		<!--CSS link-->
+		<link rel="stylesheet" type="text/css" href="<?php if(isset($stylesheet1)){echo $stylesheet1;} ?>">
+        <link rel="stylesheet" type="text/css" href="<?php if(isset($stylesheet2)){echo $stylesheet2;} ?>">
+
+		<!--bootstrap CDN-->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<!--JS file-->
+		<script type="text/javascript" src="<?php if(isset($js_file)){echo $js_file;} ?>"></script>
+
+	</head>
+	<body>
+
+
+	<!--navbar-->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<!--collapse btn-->
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main_navbar">
+				<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+			</button>
+
+			<!--navbar header-->
+			<div class="navbar-header">
+				<a href="http://localhost/benson/" class="navbar-brand">CB SPORTS MASSAGE</a>
+			</div>
+
+			<!--menu items-->
+			<div class="collapse navbar-collapse" id="main_navbar">
+				<ul class="nav navbar-nav">
+					<li id="link_1"><a href="http://localhost/benson/">HOME</a></li>
+					
+					<!--services dropdown box-->
+					<li class="dropdown" id="link_2">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							SERVICES <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="http://localhost/benson/sports_massage/">SPORTS MASSAGE</a></li>
+							<li><a href="http://localhost/benson/personal_training/">PERSONAL TRAINING</a></li>
+						</ul>
+					</li><!--end of dropdown-->
+
+					<li id="link_3"><a href="http://localhost/benson/contact/">CONTACT</a></li>
+				</ul>
+				<!--book now navbar btn-->
+				<div class="container-fluid nav navbar-nav navbar-right">
+					<a href="http://localhost/benson/contact/" class="btn navbar-btn btn-info">BOOK NOW!</a>
+				</div>
+			</div>
+		</div>
+	</nav><!--end of navbar-->

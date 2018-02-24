@@ -1,0 +1,109 @@
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+}
+
+ul{
+	list-style:none;
+	padding:0;
+}
+
+
+
+/*main_header*/
+#main_header{
+	background-image:url("Official pics/IMG_1023-1.jpg");
+	background-position:center;
+	background-size:cover;
+	height:100vh;
+}
+
+#header_text{
+	padding-top:40vh;
+	color:#fff;
+}
+
+#header_text h1{
+	font-size:7.5rem;
+}
+
+#header_text h3{
+	font-size:3rem;
+}
+
+#main_header_btn{
+	margin-top:3rem;
+}
+
+#main_header_btn a{
+	font-size:2rem;
+}
+
+	@media(max-width:768px){
+		#header_text h1{
+			font-size:4.5rem;
+		}
+		#header_text h3{
+			font-size:1.8rem;
+		}
+		#main_header_btn a{
+			font-size:1.2rem;
+		}
+	}
+
+	@media(max-width:430px){
+		.navbar-header{
+			display:none;
+		}
+		#header_text h1{
+			font-size:3.1rem;
+		}
+		#header_text h3{
+			font-size:1.4rem;
+		}
+		#main_header_btn a{
+			font-size:1.2rem;
+		}
+	}
+
+/*end of main header*/
+
+
+
+
+
+/*about section*/
+#profile_pic{
+	width:300px;
+}
+
+.block{
+    display:block;
+}
+
+.block:hover{
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+
+
+
+
+
+/*footer*/
+#footer{
+	background-color: #222;
+    border-color: #080808;
+	padding:3px;
+	color:white;
+}
+
+#footer li a{
+	color:white;
+	padding:2px;
+}
+/*End of footer*/
+
